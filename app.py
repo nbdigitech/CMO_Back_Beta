@@ -476,7 +476,7 @@ import zipfile
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": ["https://167.86.74.16:3000"]}}, supports_credentials=True)
 
 # ✅ Ensure OPTIONS requests are handled correctly
 @app.before_request
