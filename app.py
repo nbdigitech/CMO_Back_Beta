@@ -481,7 +481,11 @@ CORS(app, resources={r"/*": {"origins": [
     "https://cmo-front-beta-nb-digital-technologies-projects.vercel.app",
     "https://cmo-front-beta-18iwioxn1-nb-digital-technologies-projects.vercel.app",
     "https://cmophotos.in",
-    "https://cmo-front-beta-18iwioxn1-nb-digital-technologies-projects.vercel.app/admin"
+    "https://cmo-front-beta-18iwioxn1-nb-digital-technologies-projects.vercel.app/admin",
+        "https://cmophotos.in/admin",
+        "https://cmophotos.in"
+        "http://localhost:3000"
+        "https//localhost:3000"
 ]}}, supports_credentials=True)
 
 
