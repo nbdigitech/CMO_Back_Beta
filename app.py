@@ -476,8 +476,8 @@ import zipfile
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["https://cmo-front-beta.vercel.app",
-    "https://cmo-front-beta-nb-digital-technologies-projects.vercel.app"]}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+
 
 # ✅ Ensure OPTIONS requests are handled correctly
 @app.before_request
