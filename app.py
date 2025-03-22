@@ -476,16 +476,11 @@ import zipfile
 
 
 app = Flask(__name__)
+
 CORS(app, resources={r"/*": {"origins": [
-    "https://cmo-front-beta.vercel.app",
-    "https://cmo-front-beta-nb-digital-technologies-projects.vercel.app",
-    "https://cmo-front-beta-18iwioxn1-nb-digital-technologies-projects.vercel.app",
-    "https://cmophotos.in",
-    "https://cmo-front-beta-18iwioxn1-nb-digital-technologies-projects.vercel.app/admin",
-        "https://cmophotos.in/admin",
-        "https://cmophotos.in"
-        "http://localhost:3000"
-        "https//localhost:3000"
+    "http://167.86.74.16:3000",  # Frontend running on Contabo (HTTP)
+    "https://cmo-front-beta.vercel.app",  # Frontend on Vercel (if used)
+    "https://cmophotos.in"  # If frontend is also served from this domain later
 ]}}, supports_credentials=True)
 
 
