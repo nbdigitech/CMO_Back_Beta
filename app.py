@@ -477,11 +477,7 @@ import zipfile
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": [
-    "http://167.86.74.16:3000",  # Frontend running on Contabo (HTTP)
-    "https://cmo-front-beta.vercel.app",  # Frontend on Vercel (if used)
-    "https://cmophotos.in"  # If frontend is also served from this domain later
-]}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 
 
